@@ -72,7 +72,7 @@ toggleFocusBtn.addEventListener('click',()=>{
   localStorage.setItem('darkMode',document.body.classList.contains('focus-mode'));
 });
 
-// Font size
+// Font
 fontSizeInput.value=localStorage.getItem('fontSize')||18;
 document.body.style.fontSize=fontSizeInput.value+'px';
 fontSizeInput.addEventListener('input',()=>{
@@ -90,7 +90,6 @@ if(localStorage.getItem('contrast') === 'light'){
   document.body.classList.remove('light-contrast');
 }
 
-// Change background contrast dynamically
 contrastSelect.addEventListener('change', () => {
   if(contrastSelect.value === 'light'){
     document.body.classList.add('light-contrast');
@@ -126,4 +125,5 @@ startBtn.addEventListener('click',()=>{
 resetBtn.addEventListener('click',()=>{
   clearInterval(timerInterval); timerInterval=null; timerSeconds=25*60; updateTimer();
 });
+
 updateTimer();

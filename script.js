@@ -63,15 +63,6 @@ readNotesBtn.addEventListener('click',()=>{
   speechSynthesis.speak(utterance);
 });
 
-const toggleFocusBtn=document.getElementById('toggle-focus');
-const fontSizeInput=document.getElementById('font-size');
-const contrastSelect=document.getElementById('contrast');
-if(localStorage.getItem('darkMode')==='true') document.body.classList.add('focus-mode');
-toggleFocusBtn.addEventListener('click',()=>{
-  document.body.classList.toggle('focus-mode');
-  localStorage.setItem('darkMode',document.body.classList.contains('focus-mode'));
-});
-
 // Font
 fontSizeInput.value=localStorage.getItem('fontSize')||18;
 document.body.style.fontSize=fontSizeInput.value+'px';
@@ -83,7 +74,6 @@ fontSizeInput.addEventListener('input',()=>{
 // Contrast
 contrastSelect = document.getElementById('contrast');
 
-// Apply contrast mode based on saved preference
 if(localStorage.getItem('contrast') === 'light'){
   document.body.classList.add('light-contrast');
 } else {

@@ -28,25 +28,6 @@ header h1 {
   font-size:1.8rem; 
 }
 
-header button { 
-  padding:0.5rem 1rem; 
-  font-size:1rem; 
-  cursor:pointer; 
-  border:none; 
-  border-radius:5px; 
-  background-color:#00BFA6; 
-  color:#121212; 
-  transition: transform 0.1s, background-color 0.2s, filter 0.2s; 
-}
-
-header button:hover { 
-  transform: scale(1.05); 
-}
-header button:active { 
-  transform: scale(0.95); 
-  filter: brightness(1.2); 
-}
-
 main { 
   display:flex; 
   flex-direction:column; 
@@ -333,4 +314,5 @@ body.light-contrast #task-list li.low {
 body.light-contrast .timer-section button { 
   background-color: #00BFA6; 
   color: #ffffff; 
+
 }

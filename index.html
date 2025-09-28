@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeuroStudy</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1> &copy; NeuroStudy</h1>
+</header>
+
+<section id="intro-section">
+      <h2>Welcome to NeuroStudy</h2>
+      <p class="typing-effect">NeuroStudy is a study dashboard designed specifically for students with Attention Deficit Disorder.</p>
+      <p>
+        It provides a clean, accessible, and interactive environment to manage tasks,
+        take notes, and focus on studying efficiently.
+      </p>
+      <ul>
+        <li><strong>Task Management:</strong> Add, remove, and prioritize tasks with color-coding.</li>
+        <li><strong>Study Notes:</strong> Write notes and listen to them with the text-to-speech feature.</li>
+        <li><strong>Focus Timer:</strong> Use a Pomodoro-style timer to structure study sessions.</li>
+        <li><strong>Accessibility Settings:</strong> Adjust font size, contrast, and focus mode.</li>
+        <li><strong>Persistent Data:</strong> Tasks and settings are saved automatically, even after reload.</li>
+      </ul>
+    </section>
+
+    <section id="benefits-section">
+      <h2>How NeuroStudy Helps You</h2>
+      <div class="benefit-cards">
+        <div class="card1">
+          <h3>Stay Organized</h3>
+          <p>Manage tasks and prioritize your work using color-coded categories for high, medium, and low priorities.</p>
+        </div>
+        <div class="card2">
+          <h3>Focus Better</h3>
+          <p>Use the Pomodoro timer and focus mode to minimize distractions and maintain study flow.</p>
+        </div>
+         <div class="card3">
+          <h3>Retain Information</h3>
+          <p>Take notes in the study section and listen to them using the text-to-speech feature to reinforce learning.</p>
+        </div>
+      <div class="card4">
+          <h3>Customize Your Learning</h3>
+          <p>Adjust font size, background contrast, and other accessibility settings to match your preferences.</p>
+        </div>
+      </div>
+    </section>
+
+<!-- Task Management -->
+    <section class="tasks-section">
+      <h2>My Tasks</h2>
+      <form id="task-form">
+        <input type="text" id="task-input" placeholder="Add new task" required>
+        <select id="priority">
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+        <button type="submit">Add Task</button>
+      </form>
+      <ul id="task-list"></ul>
+    </section>
+
+<main>
+  <section class="timer-section">
+    <div class="timer-controls">
+      <button id="study25">25 min Study</button>
+      <button id="study60">1 hr Study</button>
+      <button id="revision">Study break</button>
+    </div>
+    <div class="timer-display">
+      <span id="minutes">25</span>:<span id="seconds">00</span>
+    </div>
+    <button id="startStop">Start</button>
+    <audio id="alarm-sound" src="sound/lo-fi-alarm-clock-243766.mp3" preload="auto"></audio>
+  </section>
+
+<section class="notes-section">
+  <h2>Study Notes</h2>
+  <textarea id="notes" placeholder="Write your study notes here..."></textarea>
+  <button id="save-notes">Save Notes</button>
+  <button id="read-notes">Read Aloud</button>
+  </section>
+</section>
+</main>
+
+  <footer>
+    <p>&copy; NeuroStudy Yamkela Lusithi   |  all rights reserved.</p>
+  </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

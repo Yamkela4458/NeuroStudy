@@ -15,9 +15,8 @@ body, html {
 header {
   text-align: center;
   padding: 1rem;
-  font-size: 2rem;
-  color: #522c06;
-  text-shadow: 0 0 10px #eae8e3, 0 0 20px #e5d3be;
+  font-size: 1.5rem;
+  color: #f34c05;
 }
 
 #intro-section {
@@ -27,14 +26,13 @@ header {
   background-image: url(images/f6af3e65f4c0f6a8fe6d500cb10280ae.jpg);
   background-size: cover;
   border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(247, 249, 249, 0.2);
   color: #e0f7f5;
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
 }
 
 #intro-section h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: #ff8c00;
   text-align: center;
@@ -73,7 +71,7 @@ header {
 
 @keyframes blink {
   0%, 100% { border-color: transparent; }
-  50% { border-color: #2f00ff; }
+  50% { border-color: #ee7503; }
 }
 
 #intro-section ul {
@@ -98,7 +96,7 @@ header {
 }
 
 #intro-section strong {
-  color: #0037ff;
+  color: #ff5900;
 }
 
 
@@ -118,7 +116,7 @@ header {
   max-width: 1000px;
   margin: 4rem auto;
   padding: 2rem;
-  background: linear-gradient(145deg, #1b0b2a, #2e0f4f);
+  background: #4f4d4d;
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(255, 165, 0, 0.15);
   color: #f4e6ff;
@@ -131,7 +129,6 @@ header {
   color: #ff8400;
   text-align: center;
   margin-bottom: 2rem;
-  text-shadow: 0 0 10px #d98005;
 }
 
 .benefit-cards {
@@ -266,7 +263,6 @@ header {
   padding: 2rem;
   background: linear-gradient(145deg, #0f1a2b, #1a2e4f);
   border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0, 255, 183, 0.2);
   color: #e0f7f5;
   font-family: 'Inter', sans-serif;
 }
@@ -274,9 +270,8 @@ header {
 .tasks-section h2 {
   text-align: center;
   font-size: 2rem;
-  color: burlywood;
+  color: rgb(239, 97, 9);
   margin-bottom: 1.5rem;
-  text-shadow: 0 0 10px #ffa200;
 }
 
 #task-form {
@@ -377,21 +372,21 @@ main {
   margin: 0.5rem;
   padding: 0.5rem 1rem;
   background: #111;
-  border: 2px solid #00ffcc;
-  color: #00ffcc;
+  border: 2px solid #ff7700;
+  color: #ff7700;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .timer-controls button:hover, #startStop:hover {
-  background: #00ffcc;
+  background: #dbd4c6;
   color: #111;
 }
 
 .timer-display {
   font-size: 3rem;
   margin: 1rem;
-  text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
+  text-shadow: 0 0 5px #0004ff, 0 0 10px #021c9b;
 }
 
 .notes-section {
@@ -400,7 +395,6 @@ main {
   padding: 2rem;
   background: linear-gradient(145deg, #1b1b2a, #2e2e4f);
   border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0, 183, 255, 0.2);
   color: #e0f7ff;
   font-family: 'Inter', sans-serif;
   display: flex;
@@ -411,7 +405,7 @@ main {
 .notes-section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #ff2200;
+  color: #ff7300;
 }
 
 #notes {
